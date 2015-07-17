@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^gdx)q#x*k4zz=^0gis&ew#2!mihr*njwgz4vccq-ljvc8_exp'
+SECRET_KEY = '5igatjyh+wiuu9hwjdk^@_k2)qbbp^twtx7a!@42pwk-dst2y4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -58,8 +58,8 @@ WSGI_APPLICATION = 'fitimjob.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.path.join(BASE_DIR, 'db.backends.postgresql_psycopg2'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
