@@ -59,3 +59,27 @@ def women(request):
 
 def company(request):
     return render_to_response('company.html')
+
+
+def coaching(request):
+    return render_to_response('coaching.html')
+
+
+def programm(request):
+    return render_to_response('programm.html')
+
+
+def seminar(request):
+    return render_to_response('seminar.html')
+
+
+def anamnese(request):
+    return render_to_response('anamnese.html')
+
+
+def pricing(request):
+    return render_to_response('pricing.html')
+
+
+def agb(request):
+    return render_to_response('agb.html')

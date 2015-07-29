@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit at Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="icon" href="../static/media/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/jquery.min.js" type="application/javascript"></script>
+    <script src="../static/js/bootstrap.min.js" type="application/javascript"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand active" href="/">Fit im Job</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/live-bereich">Stream</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Menü <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/men">Männer</a></li>
+                        <li><a href="/women">Frauen</a></li>
+                        <li><a href="/company">Unternehmen</a></li>
+                        <li><a href="/anamnese">Anamnese Bogen</a></li>
+                        <li><a href="/team">Team</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Registrieren</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="green btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="/impress">Impressum</a></li>
+                <li><a href="/contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<div class="container">
+    <form class="form-inline">
+        <table class="table-responsive">
+            <tr>
+                <div class="btn-group">
+                    <button class="btn btn-default">
+                        <input type="checkbox" class="checkbox" id="chkbx">
+                    </button>
+                    <button type="button" class="btn btn-default">Go!</button>
+                </div>
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary navbar-btn active" data-toggle="collapse" data-target="#person">
+                        <input type="checkbox" id="person-btn"/><span class="hidden-xs">Person</span>
+                    </label>
+                    <label class="btn btn-primary navbar-btn active" data-toggle="collapse" data-target="#vehicle">
+                        <input type="checkbox" id="vehicle-btn"/><span class="hidden-xs">Vehicle</span>
+                    </label>
+                </div>
+            </tr>
+            <tr>
+                <div class="btn-group">
+                    <button class="btn btn-default">
+                        <input type="checkbox" class="checkbox" id="chkbx">
+                    </button>
+                    <button type="button" class="btn btn-default">Blablablabl ghfdjkagfjk</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-default">
+                        <input type="checkbox" class="checkbox" id="chkbx">
+                    </button>
+                    <button type="button" class="btn btn-default">Hallljdjshjlghj</button>
+                </div>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default btn-block">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Ich interessiere mich für
+                        die
+                        Online-Betreuung</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Ich interessiere mich für
+                        die
+                        Online-Betreuung</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default btn-block">
+                        <input type="hidden" name="foo" value="1" align="left"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Ich möchte einen digitalen
+                        Trainingsplan</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default btn-block">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Ich möchte einen digitalen
+                        Ernährungsplan</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default btn-block">
+                        <input type="text" name="foo" placeholder="Name" border="auto"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Vorname"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Strasse"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Hausnummer"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="PLZ"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Stadt"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Firma"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Krankenkasse"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Telefon"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Email"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Geburtstag"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Trainingsziel"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Geburtstag"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Körpergröße"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Gewicht"/>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="text" name="foo" placeholder="Geburtstag"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Gewichtsreduktion</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Straffung und Kräftigung
+                        der
+                        Problemzonen
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Gewichtsreduktion</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Aufbau
+                        Rückenmuskulatur</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Stressreduktion /
+                        Entspannung</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">
+                        Ernährungsumstellung</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">
+                        Marathonvorbereitung</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Walken, Laufen</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>Welche Bewegung macht Ihnen Spass?</th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Gerätetraining</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Fitnesskurse</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Ballsport,
+                        Spielsport</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Skaten</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Ballsport,
+                        Spielsport</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Skaten</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Schwimmen</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Haben Sie bereits
+                        Erfahrungen im Sport gesammelt?</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Schwimmen</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Haben Sie bereits
+                        Erfahrungen im Sport gesammelt?</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Ja</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Nein</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Haben Sie gesundheitliche
+                        Probleme?</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Ja</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Nein</input>
+                    </label>
+                </td>
+                <th>
+                    Wie oft können Sie pro Woche trainieren?
+                </th>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="radio" class="radio"> einmal
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="radio" class="radio"> zweimal
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="radio" class="radio"> 3-4 mal
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="radio" class="radio"> öfter
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Was sind Ihre
+                        Ernährungsziele?</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Gewichtsreduktion</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Ernährungsumstellung</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Muskelaufbau</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Wann können Sie
+                        trainieren?</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">vormittags</input>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">nachmittags</input>
+                    </label>
+                </td>
+                <td>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">abends</input>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <p>Sie erhalten von uns eine Auftragsbestätigung mit den Zahlungsmodalitäten.</p>
+
+</div>
+</body>
+</html>

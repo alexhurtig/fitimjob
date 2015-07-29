@@ -1,22 +1,69 @@
 <!DOCTYPE html>
-<html lang="en"/>
+<html lang="de">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <title>Signin Template for Bootstrap</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="signin.css" rel="stylesheet">
-    <style>
-        body { background-color: skyblue}
-    </style>
+    <meta charset="UTF-8">
+    <title>Fit at Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="icon" href="../static/media/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/jquery.min.js" type="application/javascript"></script>
+    <script src="../static/js/bootstrap.min.js" type="application/javascript"></script>
 </head>
 
 <body>
 
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Fit im Job</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/liveworkout">Stream</a></li>
+                <li><a href="/videoworkout">Videos</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Menü <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/men">Männer</a></li>
+                        <li><a href="/women">Frauen</a></li>
+                        <li><a href="/company">Unternehmen</a></li>
+                        <li><a href="/anamnese">Anamnese Bogen</a></li>
+                        <li><a href="/team">Team</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Registrieren</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="green btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/impress">Impressum</a></li>
+                <li><a href="/contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</nav>
 <div class="container">
 
     <form class="form-signin">
