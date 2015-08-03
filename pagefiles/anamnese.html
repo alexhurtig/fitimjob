@@ -2,7 +2,7 @@
 <html lang="de" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Fit at Work</title>
+    <title>MOVE-4-WORK</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="shortcut icon" type="icon" href="../static/media/images/favicon.ico">
@@ -33,15 +33,21 @@
                     <a class="dropdown-toggle" data-toggle="dropdown">Menü <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/news">News</a></li>
-                        <li><a href="/men">Männer</a></li>
-                        <li><a href="/women">Frauen</a></li>
-                        <li><a href="/company">Unternehmen</a></li>
+                        <li><a href="/10-wochen-programm">10 Wochen Programm</a></li>
+                        <li><a href="/personal-coaching">Personal Coaching</a></li>
+                        <li><a href="/seminare">Seminare</a></li>
+                        <li><a href="/team">Team</a></li>
+                        <li><a href="/maenner">Männer</a></li>
+                        <li><a href="/frauen">Frauen</a></li>
+                        <li><a href="/unternehmen">Unternehmen</a></li>
+                        <li><a href="/agb"></a>AGB</li>
+                        <li><a href="/preise">Preise</a></li>
                         <li><a href="/anamnese">Anamnese Bogen</a></li>
                         <li><a href="/team">Team</a></li>
                         <li><a href="/blog">Blog</a></li>
                         <li class="divider"></li>
                         <li><a href="/login">Login</a></li>
-                        <li><a href="/register">Registrieren</a></li>
+                        <li><a href="/registrieren">Registrieren</a></li>
                         <li class="divider"></li>
                         <li><a href="/logout">Logout</a></li>
                     </ul>
@@ -56,9 +62,8 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="/impress">Impressum</a></li>
-                <li><a href="/contact">Kontakt</a></li>
+                <li><a href="/impressum">Impressum</a></li>
+                <li><a href="/kontakt">Kontakt</a></li>
             </ul>
         </div>
     </div>
@@ -70,10 +75,10 @@
         <table class="table-responsive">
             <tr>
                 <div class="btn-group">
-                    <button class="btn btn-default">
-                        <input type="checkbox" class="checkbox" id="chkbx">
-                    </button>
-                    <button type="button" class="btn btn-default">Go!</button>
+                    <label class="btn btn-default">
+                        <input type="checkbox" name="go" value="1" class="checkbox" id="chkbx">
+                    </label>
+                    <button type="button" name="go" value="1" for="chkbx" class="btn btn-default">Go!</button>
                 </div>
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-primary navbar-btn active" data-toggle="collapse" data-target="#person">
@@ -87,13 +92,13 @@
             <tr>
                 <div class="btn-group">
                     <button class="btn btn-default">
-                        <input type="checkbox" class="checkbox" id="chkbx">
+                        <input type="checkbox" class="checkbox" id="chkbxfds">
                     </button>
                     <button type="button" class="btn btn-default">Blablablabl ghfdjkagfjk</button>
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-default">
-                        <input type="checkbox" class="checkbox" id="chkbx">
+                        <input type="checkbox" class="checkbox" id="chkbxas">
                     </button>
                     <button type="button" class="btn btn-default">Hallljdjshjlghj</button>
                 </div>
@@ -101,7 +106,6 @@
             <tr>
                 <td>
                     <label class="btn btn-default btn-block">
-                        <input type="hidden" name="foo" value="1"/>
                         <input type="checkbox" class="checkbox-inline" name="foo" value="1"> Ich interessiere mich für
                         die
                         Online-Betreuung</input>
@@ -135,7 +139,7 @@
             <tr>
                 <td>
                     <label class="btn btn-default btn-block">
-                        <input type="text" name="foo" placeholder="Name" border="auto"/>
+                        <input type="text" name="foo" placeholder="Name"/>
                     </label>
                 </td>
                 <td>
@@ -207,24 +211,12 @@
             <tr>
                 <td>
                     <label class="btn btn-default">
-                        <input type="text" name="foo" placeholder="Geburtstag"/>
-                    </label>
-                </td>
-                <td>
-                    <label class="btn btn-default">
                         <input type="text" name="foo" placeholder="Körpergröße"/>
                     </label>
                 </td>
-            </tr>
-            <tr>
                 <td>
                     <label class="btn btn-default">
                         <input type="text" name="foo" placeholder="Gewicht"/>
-                    </label>
-                </td>
-                <td>
-                    <label class="btn btn-default">
-                        <input type="text" name="foo" placeholder="Geburtstag"/>
                     </label>
                 </td>
             </tr>
@@ -368,17 +360,18 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="btn-group">
                     <label class="btn btn-default">
                         <input type="hidden" name="foo" value="1"/>
-                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Ja</input>
+                        <input type="radio" class="radio-inline" name="exp" value="true">Ja</input>
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="hidden" name="foo" value="1"/>
+                        <input type="radio" class="radio-inline" name="exp" value="false">Nein</input>
                     </label>
                 </td>
                 <td>
-                    <label class="btn btn-default">
-                        <input type="hidden" name="foo" value="1"/>
-                        <input type="checkbox" class="checkbox-inline" name="foo" value="1">Nein</input>
-                    </label>
+
                 </td>
             </tr>
             <tr>
@@ -409,24 +402,18 @@
                 </th>
             </tr>
             <tr>
-                <td>
+                <td class="btn-group">
                     <label class="btn btn-default">
-                        <input type="radio" class="radio"> einmal
+                        <input type="radio" class="radio" name="frequency" value="once"> einmal
                     </label>
-                </td>
-                <td>
                     <label class="btn btn-default">
-                        <input type="radio" class="radio"> zweimal
+                        <input type="radio" class="radio" name="frequency" value="twice"> zweimal
                     </label>
-                </td>
-                <td>
                     <label class="btn btn-default">
-                        <input type="radio" class="radio"> 3-4 mal
+                        <input type="radio" class="radio" name="frequency" value="uptofour"> 3-4 mal
                     </label>
-                </td>
-                <td>
                     <label class="btn btn-default">
-                        <input type="radio" class="radio"> öfter
+                        <input type="radio" class="radio" name="frequency" value="more"> öfter
                     </label>
                 </td>
             </tr>

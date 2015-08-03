@@ -20,6 +20,8 @@ def liveworkout(request):
 def login(request):
     return render_to_response('login.html')
 
+def logout(request):
+    return render_to_response('logout.html')
 
 def news(request):
     return render_to_response('news.html')

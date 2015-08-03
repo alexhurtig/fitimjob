@@ -26,6 +26,7 @@ urlpatterns = patterns('',
                        url(r'^seminare', 'fitapp.views.seminar'),
                        url(r'^preise', 'fitapp.views.pricing'),
                        url(r'^agb', 'fitapp.views.agb'),
+                       url(r'^blog', 'fitapp.views.blog'),
                        url(r'^add_form_data/$', 'fitapp.views.add_form_data')
                        ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
