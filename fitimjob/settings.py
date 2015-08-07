@@ -58,10 +58,21 @@ WSGI_APPLICATION = 'fitimjob.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbname',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -84,13 +95,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# MEDIA_URL = '/media/'
-
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'pagefiles'),)
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-# MEDIAFILES_DIRS = (os.path.join(BASE_DIR, 'media'),)
 
 LOGIN_REDIRECT_URL = ('/login')
 
