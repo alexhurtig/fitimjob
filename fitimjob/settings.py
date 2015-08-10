@@ -66,13 +66,17 @@ WSGI_APPLICATION = 'fitimjob.wsgi.application'
 #}
 
 DATABASES = {
-    'default': {
+    'fitness': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dbname',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'USER': 'alexhurtig',
+        'PASSWORD': 'Leokira84',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5432'
+    },
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
     }
 }
 
@@ -101,4 +105,3 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 LOGIN_REDIRECT_URL = ('/login')
 
-SITE_ID = 1

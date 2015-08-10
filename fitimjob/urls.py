@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = patterns('',
                        url(r'^admin/', include(admin.site.urls), name="admin"),
                        url(r'^admin/dashboard', 'fitapp.views.dashboard', name="dashboard"),
-                       url(r'^$', 'fitapp.views.fitHome', name="FIT-IM-JOB"),
+                       url(r'^$', 'fitapp.views.fitHome', name="MOVE-4-WORK"),
                        url(r'^kontakt', 'fitapp.views.contact'),
                        url(r'^impressum', 'fitapp.views.impress'),
                        url(r'^live-bereich', 'fitapp.views.liveworkout'),
@@ -26,8 +26,7 @@ urlpatterns = patterns('',
                        url(r'^seminare', 'fitapp.views.seminar'),
                        url(r'^preise', 'fitapp.views.pricing'),
                        url(r'^agb', 'fitapp.views.agb'),
-                       url(r'^blog', 'fitapp.views.blog'),
-                       url(r'^add_form_data/$', 'fitapp.views.add_form_data')
+                       url(r'^blog', 'fitapp.views.blog')
                        ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG == True:
